@@ -1,0 +1,14 @@
+$(function () {
+    $('.mainVisual .mainSlide').slick();
+
+
+
+
+
+
+
+
+
+
+
+})

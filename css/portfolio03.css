@@ -1,0 +1,74 @@
+/* header */
+
+.header {
+    line-height: 80px;
+    text-align: center;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header h1 img {
+    width: 150px;
+}
+
+.header .inner .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .inner .gnb>ul>li {}
+
+
+/* header end */
+
+
+/* main */
+
+.mainVisual .mainSlide {
+    position: relative;
+    background: url(../img/back01.jpg);
+}
+
+.mainVisual figure {
+    position: relative;
+    height: 700px;
+}
+
+
+.mainVisual figure .inner {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1200px;
+}
+
+.mainVisual figure .inner img {
+    width: 100%;
+}
+
+.mainVisual .inner h2 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.mainVisual .inner p {
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+
+/* main end */
