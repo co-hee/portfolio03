@@ -1,5 +1,4 @@
 /* header */
-
 .header {
     line-height: 80px;
     text-align: center;
@@ -22,7 +21,10 @@
     gap: 30px;
 }
 
-.header .inner .gnb>ul>li {}
+.header .gnb>ul>li .smenu {
+    line-height: 50px;
+
+}
 
 
 /* header end */
@@ -33,13 +35,61 @@
 .mainVisual .mainSlide {
     position: relative;
     background: url(../img/back01.jpg);
+
 }
 
 .mainVisual figure {
     position: relative;
     height: 700px;
+
 }
 
+
+
+.mainVisual .txt {
+
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1200px;
+    opacity: 0;
+    transition: 0.5s 0.2s;
+}
+
+.mainVisual figure.on .txt {
+    top: 0;
+    opacity: 1;
+}
+
+.mainVisual .txt h2 {
+
+    position: absolute;
+    top: 90px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    text-indent: -2px;
+}
+
+.mainVisual .txt p {
+
+    position: absolute;
+    top: 260px;
+    left: 0;
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+    transition: 0.5s 0.5s;
+
+    opacity: 0;
+}
+
+.mainVisual figure.on .txt p {
+    top: 170px;
+    opacity: 1;
+}
 
 .mainVisual figure .inner {
     position: absolute;
@@ -49,24 +99,30 @@
     width: 1200px;
 }
 
-.mainVisual figure .inner img {
-    width: 100%;
-}
 
-.mainVisual .inner h2 {
+.mainVisual .mainSlide .slick-arrow {
     position: absolute;
-    top: 20px;
-    left: 0;
-    font-size: 70px;
-    font-weight: 700;
-    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: none;
+    border: none;
+
+    font-size: 0;
+
 }
 
-.mainVisual .inner p {
-    font-size: 40px;
-    font-weight: 300;
-    color: #fff;
+.mainVisual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
 }
+
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
 
 
 
