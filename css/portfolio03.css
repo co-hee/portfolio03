@@ -1,7 +1,13 @@
 /* header */
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
     line-height: 80px;
     text-align: center;
+    background: #fff;
+
+    z-index: 9999;
 }
 
 .header .inner {
@@ -21,30 +27,75 @@
     gap: 30px;
 }
 
-.header .gnb>ul>li .smenu {
-    line-height: 50px;
-
+.header .gnb>ul>li {
+    position: relative;
 }
 
+.header .gnb>ul>li .smenu {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    line-height: 40px;
+    background: rgba(255, 255, 255);
+    color: #333;
+
+    text-align: center;
+    transform: translate(-50%, 0);
+    width: 150px;
+    z-index: 999;
+
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.header .gnb>ul:hover>li .smenu {
+    height: 170px;
+}
+
+
+.header .gnb>ul::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+
+    background: rgba(255, 255, 255);
+    z-index: 999;
+
+    height: 0;
+    transition: 0.5s;
+}
+
+.header .gnb>ul:hover::before {
+    height: 170px;
+}
+
+.header .gnb>ul>li .smenu li:hover {
+    color: rgb(27, 76, 180);
+}
 
 /* header end */
 
 
 /* main */
 
+.mainVisual {
+    position: relative;
+}
+
 .mainVisual .mainSlide {
     position: relative;
-    background: url(../img/back01.jpg);
+    background: url(../img/back01.jpg) no-repeat center top / cover;
 
 }
 
 .mainVisual figure {
     position: relative;
-    height: 700px;
+    height: 800px;
 
 }
-
-
 
 .mainVisual .txt {
 
@@ -78,7 +129,7 @@
     position: absolute;
     top: 260px;
     left: 0;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 200;
     color: #fff;
     transition: 0.5s 0.5s;
@@ -91,9 +142,37 @@
     opacity: 1;
 }
 
+.mainVisual figure .txt span {
+    position: absolute;
+    top: 310px;
+    left: 0;
+    font-size: 16px;
+
+    color: rgb(255, 255, 255);
+    transition: 0.5s 0.5s;
+    border: 1px solid rgb(27, 76, 180);
+    border-radius: 5px;
+    background: rgb(27, 76, 180);
+    padding: 10px 20px;
+    opacity: 0;
+}
+
+.mainVisual figure.on .txt span {
+    top: 230px;
+    opacity: 1;
+}
+
+
+.mainVisual figure.on .txt span:hover {
+    color: rgb(27, 76, 180);
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+}
+
+
 .mainVisual figure .inner {
     position: absolute;
-    bottom: 20px;
+    bottom: 110px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 1200px;
@@ -125,6 +204,81 @@
 
 
 
-
-
 /* main end */
+
+/* pop_gnb */
+
+.pop_gnb {
+
+    position: relative;
+
+
+}
+
+
+
+.pop_gnb .pop_slide {
+    position: absolute;
+    bottom: -68px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(51, 51, 51, 0.3);
+    width: 1200px;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+.pop_gnb .pop_slide a {
+    display: block;
+    text-align: center;
+}
+
+.pop_gnb .pop_slide img {
+    margin: 0 auto;
+    width: 80px;
+    transition: 0.5s;
+}
+
+.pop_gnb .pop_slide li:hover img {
+    width: 100px;
+}
+
+.pop_gnb li {
+    text-align: center;
+}
+
+.mainVisual .pop_gnb .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: none;
+    border: none;
+
+    font-size: 0;
+
+    width: 20px;
+    height: 20px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.mainVisual .pop_gnb .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -570px;
+}
+
+.mainVisual .pop_gnb .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 570px;
+}
+
+.main_content {
+    height: 500px;
+    padding: 100px;
+    background: #eee;
+    outline: 1px solid tomato;
+}

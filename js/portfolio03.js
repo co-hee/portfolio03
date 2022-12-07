@@ -14,6 +14,17 @@ $(function () {
         pauseOnFocus: false
     });
 
+    $('.pop_gnb .pop_slide').slick({
+
+        autoplay: false,
+        autoplaySpeed: 4000,
+        pauseOnHOVER: false,
+        pauseOnFocus: false,
+        slidesToShow: 6,
+        slidesToScroll: 4,
+
+    });
+
 
 
 
