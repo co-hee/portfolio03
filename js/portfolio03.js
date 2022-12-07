@@ -7,7 +7,7 @@ $(function () {
 
 
     $('.mainVisual .mainSlide').slick({
-
+        dots: true,
         autoplay: true,
         autoplaySpeed: 4000,
         pauseOnHOVER: false,
@@ -17,11 +17,10 @@ $(function () {
     $('.pop_gnb .pop_slide').slick({
 
         autoplay: false,
-        autoplaySpeed: 4000,
         pauseOnHOVER: false,
         pauseOnFocus: false,
         slidesToShow: 6,
-        slidesToScroll: 4,
+        slidesToScroll: 6,
 
     });
 
