@@ -1,3 +1,6 @@
+@import url(https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css);
+
+
 /* header */
 .header {
     position: sticky;
@@ -101,7 +104,7 @@
 /* header end */
 
 
-/* main */
+/* .main */
 
 .mainVisual {
     position: relative;
@@ -261,9 +264,9 @@
 }
 
 
-/* main end */
+/* .main end */
 
-/* pop_gnb */
+/* .pop_gnb */
 
 .pop_gnb {
     position: relative;
@@ -341,13 +344,13 @@
     margin: 0 0 0 570px;
 }
 
-/* pop_gnb end*/
+/* .pop_gnb end*/
 
 
-/* main_content */
+/* .main_content */
 .main_content {
     padding: 100px 0;
-    background: #eee;
+    background: #f9f9f9;
 }
 
 .main_content .inner {
@@ -442,11 +445,11 @@
 }
 
 
-/* main_content end */
+/* .main_content end */
 
 
 
-/* sub_content */
+/* .sub_content */
 
 .sub_content {
     height: 900px;
@@ -462,22 +465,287 @@
     text-align: center;
 }
 
-.sub_content h2 {
+.sub_content .inner h2 {
     font-size: 50px;
     font-weight: 700;
     margin: 30px 0;
 }
 
-.sub_content p {
+.sub_content .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+
+}
+
+.sub_content .ioniq {
+    position: relative;
+    display: flex;
+}
+
+.sub_content .ioniq_txt {
+    background: #f7f3f2;
+    text-align: left;
+    padding: 45px;
+}
+
+.sub_content .ioniq_txt span {
+    display: inline-block;
+    font-size: 12px;
+    background: rgb(11, 166, 177);
+    padding: 2px 4px;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+
+.sub_content .ioniq_txt .tit {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+    text-indent: -1px;
+}
+
+.sub_content .ioniq_txt .txt {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 70px 0;
+}
+
+.sub_content .ioniq_txt .more {
+    display: block;
+    background: rgb(27, 76, 180);
+    padding: 8px 0;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.sub_content .ioniq_txt .txt02 {
+    display: block;
+    padding: 7px 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 2px 0;
+}
+
+.sub_content .ioniq_txt::before {
+    position: absolute;
+    content: '';
+    background: url(../img/ev_icon_m.jpg) no-repeat center center / cover;
+    bottom: 40px;
+    right: 30px;
+    width: 100px;
+    height: 50px;
+}
+
+.sub_content .ioniq_txt p {
+    font-size: 15px;
+    line-height: 1.5;
+    word-spacing: 0.5px;
+    margin: 0 0 40px 0;
+    word-break: keep-all;
+    text-indent: -1px;
+}
+
+.sub_content .ioniq_txt strong {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(27, 76, 180);
+    margin: 0 20px 0 0;
+
+}
+
+.sub_content .ioniq_txt strong~strong::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background: #999;
+    margin: 0 20px 0 0;
+}
+
+.sub_content .ioniq_txt strong i {
+
+    transition: 0.5s;
+}
+
+.sub_content .ioniq_txt strong:hover i {
+    transform: translateX(8px)
+}
+
+.sub_content .ioniq_txt i {
+    font-weight: 500;
+    color: rgb(27, 76, 180);
+    padding: 0 0 0 10px;
+}
+
+/* .sub_content end*/
+
+
+/* .service */
+.service {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.service .inner {
+
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.service p {
     font-size: 15px;
     font-weight: 300;
     margin: 0 0 50px 0;
 }
 
-/* sub_content end*/
+.service .wrap {
+
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    gap: 30px;
+
+}
+
+.service .wrap .service_Slide {
+    position: relative;
+    flex: 2.2;
+    overflow: hidden;
+    border: 2px solid rgb(214, 214, 214);
+
+}
+
+.service .wrap .service_Slide figure {
+    background: #fff;
+    padding: 20px 0 0 0;
+    align-items: flex-end;
+}
+
+.service .wrap .service_Slide .tit {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(27, 76, 180);
+    text-align: left;
+    margin: 20px 0 16px 40px;
+}
+
+.service .wrap .service_Slide .txt {
+    font-size: 15px;
+    text-align: left;
+    margin: 0 0 25px 40px;
+    font-weight: 300;
+}
+
+.service .wrap .service_Slide a {
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+    margin: 0 0 30px 40px;
+    font-weight: 500;
+}
+
+.service .wrap .APP {
+    flex: 0.8;
+    border-radius: 30px;
+    background: #b0c7eb;
+
+}
+
+.service .wrap .APP .tit {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(27, 76, 180);
+    text-align: left;
+    margin: 60px 45px 30px 45px;
+}
+
+.service .wrap .APP .txt {
+
+    text-align: left;
+    margin: 0 45px 25px 45px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.service .wrap .APP a {
+    font-size: 15px;
+    text-align: left;
+    margin: 0 5px 30px 45px;
+    font-weight: 500;
+    line-height: 1.5;
+}
 
 
-/* footer */
+.service .service_Slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: #fff;
+
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    border: none;
+    border-top: 2px solid #999;
+    border-left: 2px solid #999;
+    opacity: 0.25;
+}
+
+.service .service_Slide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -405px;
+}
+
+.service .service_Slide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 405px;
+}
+
+.service .service_Slide .slick-dots {
+    position: absolute;
+    top: 5px;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.service .service_Slide .slick-dots>li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #777;
+
+    margin: 0 2px;
+    border-radius: 50%;
+    margin: 0 7px;
+    transition: 0.5s;
+}
+
+.service .service_Slide .slick-dots>li.slick-active {
+    background: rgb(27, 76, 180);
+}
+
+.service .slick-dots>li button {
+    display: none;
+}
+
+
+/* .service end */
+
+
+
+/* .footer */
 
 .footer {
     padding: 50px 0;
@@ -495,7 +763,7 @@
 
 .footer .list li {
     display: inline-block;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     margin: 0 0 20px 0;
 }
@@ -529,4 +797,4 @@
     color: rgba(255, 255, 255, 0.651);
 }
 
-/* footer end*/
+/* .footer end*/

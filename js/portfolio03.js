@@ -24,6 +24,16 @@ $(function () {
 
     });
 
+    $('.service .service_Slide').slick({
+        dots: true,
+        autoplay: false,
+        pauseOnHOVER: false,
+        pauseOnFocus: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+
+    });
+
 
 
 
