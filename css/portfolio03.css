@@ -112,13 +112,13 @@
 
 .mainVisual .mainSlide {
     position: relative;
-    background: url(../img/back01.jpg) no-repeat center top / cover;
+    background: url(../img/back01.jpg) no-repeat center center / cover;
 
 }
 
 .mainVisual figure {
     position: relative;
-    height: 700px;
+    height: 650px;
 
 }
 
@@ -598,7 +598,7 @@
 .service h2 {
     font-size: 50px;
     font-weight: 700;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
 }
 
 .service p {
