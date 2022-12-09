@@ -123,67 +123,63 @@
 }
 
 .mainVisual .txt {
-
     position: absolute;
-    top: 30px;
+    top: 150px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 1200px;
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s 0.2s;
 }
 
-.mainVisual figure.on .txt {
-    top: 0;
-    opacity: 1;
-}
 
-.mainVisual .txt h2 {
-
-    position: absolute;
-    top: 90px;
-    left: 0;
-    font-size: 70px;
+.mainVisual figure .txt h2 {
+    font-size: 60px;
     font-weight: 700;
     color: #fff;
     text-indent: -2px;
+    margin: 0 0 20px 0;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translate(0, 50px);
+}
+
+.mainVisual figure.on .txt h2 {
+    transform: translate(0, 0);
+    opacity: 1;
 }
 
 .mainVisual .txt p {
-
-    position: absolute;
-    top: 270px;
-    left: 0;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 200;
     color: #fff;
     transition: 0.5s 0.5s;
-
+    transform: translate(0, 50px);
+    margin: 0 0 50px 0;
     opacity: 0;
 }
 
 .mainVisual figure.on .txt p {
-    top: 180px;
+    transform: translate(0, 0);
     opacity: 1;
 }
 
 .mainVisual figure .txt span {
-    position: absolute;
-    top: 300px;
-    left: 0;
+    display: inline-block;
     font-size: 16px;
 
     color: rgb(255, 255, 255);
-    transition: 0.5s 0.5s;
+    transition: 0.5s 1s;
     border: 1px solid rgb(27, 76, 180);
     border-radius: 5px;
     background: rgb(27, 76, 180);
     padding: 10px 20px;
+    transform: translate(0, 50px);
     opacity: 0;
 }
 
 .mainVisual figure.on .txt span {
-    top: 245px;
+    transform: translate(0, 0);
     opacity: 1;
 }
 
@@ -233,7 +229,9 @@
 .mainVisual .mainSlide .slick-dots {
     position: absolute;
     top: 90px;
-    right: 250px;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, 0);
 
 
 }
@@ -269,21 +267,22 @@
 /* .pop_gnb */
 
 .pop_gnb {
-    position: relative;
-}
-
-
-
-.pop_gnb .pop_slide {
     position: absolute;
-    bottom: -68px;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 50%);
     background: #fff;
     box-shadow: 0 3px 5px rgba(51, 51, 51, 0.3);
     width: 1200px;
     padding: 20px 0;
     border-radius: 20px;
+    /* vertical-align: middle; */
+    margin: auto 0;
+}
+
+.pop_gnb .pop_slide {
+    width: 700px;
+    margin: 0 auto;
 }
 
 .pop_gnb .pop_slide a {
@@ -293,27 +292,25 @@
 
 .pop_gnb .pop_slide img {
     margin: 0 auto;
-    scale: 80%;
+    width: 60px;
+    opacity: 0.6;
     transition: 0.5s;
 }
 
 .pop_gnb .pop_slide li:hover img {
-    scale: 100%;
+    opacity: 1;
 }
 
 .pop_gnb .pop_slide li p {
     color: #777;
     font-size: 14px;
+    font-weight: 300;
 }
 
-.pop_gnb .pop_slide li:hover p {
-    color: rgb(27, 76, 180);
-    font-weight: bold;
-    font-size: 16px;
-}
 
 .pop_gnb li {
     text-align: center;
+
 }
 
 .mainVisual .pop_gnb .slick-arrow {
@@ -330,18 +327,18 @@
     width: 20px;
     height: 20px;
 
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .mainVisual .pop_gnb .slick-prev {
     transform: translate(-50%, -50%) rotate(-45deg);
-    margin: 0 0 0 -570px;
+    margin: 0 0 0 -500px;
 }
 
 .mainVisual .pop_gnb .slick-next {
     transform: translate(-50%, -50%) rotate(135deg);
-    margin: 0 0 0 570px;
+    margin: 0 0 0 500px;
 }
 
 /* .pop_gnb end*/
@@ -349,7 +346,7 @@
 
 /* .main_content */
 .main_content {
-    padding: 100px 0;
+    padding: 150px 0 100px 0;
     background: #f9f9f9;
 }
 
@@ -363,7 +360,7 @@
 .main_content h2 {
     font-size: 50px;
     font-weight: 700;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
 }
 
 .main_content p {
@@ -452,10 +449,9 @@
 /* .sub_content */
 
 .sub_content {
-    height: 900px;
+
     padding: 100px 0;
-
-
+    margin: 0 auto;
 }
 
 .sub_content .inner {
@@ -468,7 +464,7 @@
 .sub_content .inner h2 {
     font-size: 50px;
     font-weight: 700;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
 }
 
 .sub_content .inner p {
@@ -565,7 +561,6 @@
 }
 
 .sub_content .ioniq_txt strong i {
-
     transition: 0.5s;
 }
 
@@ -621,7 +616,7 @@
     position: relative;
     flex: 2.2;
     overflow: hidden;
-    border: 2px solid rgb(214, 214, 214);
+    border: 1px solid rgb(214, 214, 214);
 
 }
 
@@ -658,6 +653,7 @@
     flex: 0.8;
     border-radius: 30px;
     background: #b0c7eb;
+    padding: 60px 40px 0;
 
 }
 
@@ -666,21 +662,21 @@
     font-weight: 700;
     color: rgb(27, 76, 180);
     text-align: left;
-    margin: 60px 45px 30px 45px;
+    margin: 0 0 30px 0;
 }
 
 .service .wrap .APP .txt {
-
     text-align: left;
-    margin: 0 45px 25px 45px;
+    margin: 0 30px 25px 0;
     font-weight: 300;
     line-height: 1.5;
+    word-break: keep-all;
 }
 
 .service .wrap .APP a {
     font-size: 15px;
     text-align: left;
-    margin: 0 5px 30px 45px;
+    margin: 0 0 30px 0;
     font-weight: 500;
     line-height: 1.5;
 }
